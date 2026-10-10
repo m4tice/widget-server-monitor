@@ -1,0 +1,17 @@
+{
+  "check_interval_seconds": 15,
+  "timeout_seconds": 3,
+  "start_with_windows": false,
+  "servers": [
+    {
+      "name": "Jenkins",
+      "url": "https://jenkins.example.com/health",
+      "type": "http"
+    },
+    {
+      "name": "Build agent",
+      "url": "build-agent.example.com:8080",
+      "type": "tcp"
+    }
+  ]
+}
